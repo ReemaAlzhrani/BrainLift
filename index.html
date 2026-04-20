@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BrainLift</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="container">
+    <h1>BrainLift</h1>
+    <p class="subtitle">Reset your mind in a simple way</p>
+
+    <div class="widget mood-box">
+      <label for="moodSelect">Select your mood</label>
+      <select id="moodSelect">
+        <option value="">Choose...</option>
+        <option value="stressed">😤 Stressed</option>
+        <option value="tired">😴 Tired</option>
+        <option value="overthinking">😵‍💫 Overthinking</option>
+        <option value="unmotivated">📉 Unmotivated</option>
+      </select>
+
+      <div class="buttons">
+        <button id="generateBtn">Generate</button>
+        <button id="anotherBtn">Try Another</button>
+        <button id="clearBtn">Clear</button>
+      </div>
+    </div>
+
+    <p id="message" class="message">Choose your mood to begin</p>
+
+    <div class="results">
+      <div class="card">
+        <h3>💬 Message</h3>
+        <p id="moodMessage">-</p>
+      </div>
+
+      <div class="card">
+        <h3>⚡ Activity</h3>
+        <p id="activityText">-</p>
+      </div>
+
+      <div class="card">
+        <h3>💡 Quick Tip</h3>
+        <p id="tipText">-</p>
+      </div>
+
+      <div class="card">
+        <h3>🎯 Type</h3>
+        <p id="typeText">-</p>
+      </div>
+
+      <div class="card">
+        <h3>✨ Quote</h3>
+        <p id="quoteText">-</p>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
